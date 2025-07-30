@@ -33,13 +33,25 @@ How to use `SSpMosaic`
 -------------------
 SSpMosaic tutorials are as follows. 
 
+For every analytical task, the SSpMosaic program must first be generated, which comprises two steps: SSpMosaic program generation and the subsequent SSpMosaic program network-propagation step.
+
+For integration tasks, SSpMosaic program generation should be executed on each batch of data individually, followed by running the network-propagation step as a whole; finally, proceed according to the SSpMosaic integration tutorial.
+
+For single-cell annotation tasks，SSpMosaic program generation should be executed on the reference dataset. If the reference dataset has multiple batches,it needs to be run on each batch separately, followed by running the network-propagation step as a whole;finally, proceed according to the SSpMosaic single-cell annotation tutorial.
+
+For deconvolution tasks, SSpMosaic program generation should be executed on the single-cell reference data. If the reference single-cell data has multiple batches,it needs to be run on each batch separately, followed by running the network-propagation step as a whole;finally, proceed according to the SSpMosaic deconvolution tutorial.
+
 ## SSpMosaic program
+
+The following two steps should be run in sequence before using the downstream functions of SSpMosaic.
 
 SSpMosaic program generation tutorial is in [generate program](https://zyllluck.github.io/SSpMosaic/program_generation.html)
 
 SSpMosaic program network-propagation tutorial is in [network-propagation](https://zyllluck.github.io/SSpMosaic/network_propagation.html)
 
 ## SSpMosaic downstream functions
+
+To use the downstream functions of SSpMosaic, it is necessary to first generate the SSpMosaic program in accordance with the above two steps.
 
 SSpMosaic integration tutorial is in [integration](https://zyllluck.github.io/SSpMosaic/integration_tutorial.html)
 
