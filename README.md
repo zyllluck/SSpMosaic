@@ -4,7 +4,7 @@
 <p align="center">
 <img src="https://github.com/zyllluck/SSpMosaic/blob/main/Workflow.png" width="800" />
 </p>
-The integration and annotation of single-cell and spatial multi-omics data have revolutionized our understanding of cellular heterogeneity and tissue microenvironments. Gene programs, representing co-regulated or co-expressed gene sets reflective of cellular functions, offer a biologically interpretable means to bridge diverse data types. Here, we present SSpMosaic, a novel framework that leverages interpretable metaprograms — higher-order representations of gene programs learned across datasets — to achieve robust data integration and cell-type annotation. By aligning gene programs across diverse single-cell data, SSpMosaic ensures consistent and accurate integration across batches, modalities, and species. Through learning metaprograms from reference datasets, SSpMosaic accurately annotates cell types within query datasets, enabling discovery and annotation of novel cell types through gene program analysis. Furthermore, SSpMosaic extends to spatial transcriptomics, allowing cell-type deconvolution, spatial domain detection, and identification of spatially resolved gene programs to reveal tissue organization and cellular interactions. Finally, SSpMosaic can be adapted for reference-free spatial organization characterization, facilitating the discovery of novel tissue structures and cellular niches without relying on reference single-cell datasets.
+Cellular identity emerges from the dynamic coordination of context-aware gene programs that encode biological functions across molecular layers. To decode this complexity, we present SSpMosaic, a computational framework that establishes metaprograms—higher-order representations of gene programs aligned across datasets—as universal anchors for biological state representation. By leveraging these metaprograms, SSpMosaic ensures consistent and accurate integration across batches, modalities, and species. Critically, SSpMosaic accurately annotates cell types within query datasets, enabling discovery and annotation of novel cell states through metaprogram-based transfer learning. The framework achieves resolution-agnostic deconvolution of spatial transcriptomics, precisely mapping cell-type distributions from spot-level (Visium) to subcellular scales (CosMx/Visium HD). As a paradigm-shifting application, we integrate single-nucleus transcriptomics, chromatin accessibility, and spatial transcriptomics to resolve multi-stage spatial domain dynamics across tissue slices. Finally, SSpMosaic enables reference-free spatial characterization, identifying conserved spatial ecotypes across tissue slices and annotating cellular niches without requiring matched single-cell data.
 
 Installation
 ------------
@@ -31,11 +31,11 @@ library(SSpMosaic)
 
 How to use `SSpMosaic`
 -------------------
-SSpMosaic tutorials are as follows.
+SSpMosaic tutorials are as follows. 
 
 ## SSpMosaic program
 
-SSpMosaic program generation tutorial is in [generate_module](https://zyllluck.github.io/SSpMosaic/program_generation.html)
+SSpMosaic program generation tutorial is in [generate program](https://zyllluck.github.io/SSpMosaic/program_generation.html)
 
 SSpMosaic program network-propagation tutorial is in [network-propagation](https://zyllluck.github.io/SSpMosaic/network_propagation.html)
 
